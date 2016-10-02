@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset ="uft-8" />
-    <meta name = "viewport" content = "width = device-width, initial-scale=1" />
-    <tite>COMP397 Boilerplate</tite>
-    <!-- CSS Section -->
-    <link rel="stylesheet" href="Content/reset.css">
-    <link rel="stylesheet" href="Content/game.css">
-</head>
-<body onload="preload()">
-    <div class="game">
-        <canvas id="canvas" width="640" height="480"></canvas>
-    </div>
-    <script src="Scripts/config/config.js"></script>
+    <head>
+        <!-- META TAGS -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="COMP397 Assignment 1 - Choose Your Own Adventure">
+        <meta name="author" content="Elaine Mae Villarino">
+        <link rel="icon" href="Assets/images/favicon.png">        
+        <title>EV - COMP397 - Assignment 1</title>
 
-    <!-- JavaScript Libraries -->
-    <script src="Scripts/lib/easeljs-0.8.2.min.js"></script>
-    <script src="Scripts/lib/preloadjs-0.6.2.min.js"></script>
-    <script src="Scripts/lib/soundjs-0.6.2.min.js"></script>
-    <script src="Scripts/lib/tweenjs-0.6.2.min.js"></script>
+        <!-- CSS Section -->
+        <link rel="stylesheet" href="Content/reset.css">
+        <link rel="stylesheet" href="Content/game.css">
+    </head>
+    
+    <body onload="preload()">
+        <!-- Declare Game Canvas -->
+        <div class="game">
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+        <!-- END Declare Game Canvas -->
 
-    <!--Game Scripts-->
-    <script src="Scripts/objects/asset.js"></script>
-    <script src="Scripts/objects/label.js"></script>
-    <script src="Scripts/objects/button.js"></script>
-    <script src="Scripts/objects/scene.js"></script>
-
-    <!-- Scene Scripts -->
-    <script src="Scripts/scenes/game.js"></script>
-    <script src="Scripts/scenes/menu.js"></script>
-    <script src="Scripts/scenes/gameover.js"></script>
-
-
-    <script src="Scripts/core/game.js"></script>
-</body>
+        <!-- JavaScript Libraries -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="Scripts/config/config.js"></script>
+        <!-- CreateJS Libraries -->
+        <script src="Scripts/lib/easeljs-0.8.2.min.js"></script>
+        <script src="Scripts/lib/preloadjs-0.6.2.min.js"></script>
+        <script src="Scripts/lib/soundjs-0.6.2.min.js"></script>
+        <script src="Scripts/lib/tweenjs-0.6.2.min.js"></script>
+        <!--Game Scripts-->
+        <script src="Scripts/objects/asset.js"></script>
+        <script src="Scripts/objects/label.js"></script>
+        <script src="Scripts/objects/button.js"></script>
+        <script src="Scripts/objects/scene.js"></script>
+        <!-- Scene Scripts -->
+        <script src="Scripts/scenes/game.js"></script>
+        <script src="Scripts/scenes/menu.js"></script>
+        <script src="Scripts/scenes/gameover.js"></script>
+        <script src="Scripts/core/game.js"></script>
+    </body>
 </html>
