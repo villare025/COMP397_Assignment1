@@ -1,12 +1,12 @@
 {
-  "name": "COMP397_BoilerPlate",
+  "name": "COMP397_Assignment1",
   "authors": [
-    "wbalaniucCentennialCollege <wbalaniu@my.centennialcollege.ca>"
+    "Elaine Mae Villarino <evillari@my.centennialcollege.ca>"
   ],
-  "description": "",
+  "description": "COMP397 Assignment 1 - Choose Your Own Adventure",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/villare025/COMP397_Assignment1.git",
   "ignore": [
     "**/.*",
     "node_modules",
