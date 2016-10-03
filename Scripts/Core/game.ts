@@ -24,10 +24,11 @@ var gameScene : scenes.Game;
 
 // Preload Assets required
 var assetData:objects.Asset[] = [
-    {id: "Start", src:"../../Assets/images/Start.png"}, 
-    {id: "Back", src:"../../Assets/images/Back.png"},
+    {id: "Start", src:"../../Assets/images/btnTitleStart.png"}, 
+    {id: "Preface", src:"../../Assets/images/btnTitlePreface.png"}, 
     {id: "Return", src:"../../Assets/images/return.png"},
     {id: "BG", src:"../../Assets/images/bg.jpg"},
+    {id: "BG_Title", src:"../../Assets/images/bgTitle.jpg"},
     {id: "GameOver", src:"../../Assets/images/gameover.png"}
 ];
 
@@ -62,7 +63,7 @@ function init() {
 
 function gameLoop(event: createjs.Event): void {
     // Update whatever scene is currently active.
-    console.log("gameLoop update");
+    //console.log("gameLoop update");
     currentScene.update();
     stage.update();
 }
@@ -77,6 +78,11 @@ function changeScene() : void {
             menuScene = new scenes.Menu();
             currentScene = menuScene;
             console.log("Starting MENU scene");
+            break;
+        case config.Scene.PREFACE :
+            stage.removeAllChildren();
+            currentScene = new scenes.Preface();
+            console.log("Starting Preface scene");
             break;
         case config.Scene.NODE1 :
             stage.removeAllChildren();

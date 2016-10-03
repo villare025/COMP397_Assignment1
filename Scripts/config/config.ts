@@ -19,8 +19,9 @@ module config {
         public static NODE13 : number = 13;
         public static NODE14 : number = 14;
         public static NODE15 : number = 15;
-        public static OVER : number = 16;
-        public static GAME : number = 17
+        public static PREFACE : number = 16;
+        public static OVER : number = 17;
+        public static GAME : number = 18;
     }
 
     export class Screen {

@@ -20,6 +20,7 @@
 /// <reference path="../scenes/node13.ts" />
 /// <reference path="../scenes/node14.ts" />
 /// <reference path="../scenes/node15.ts" />
+/// <reference path="../scenes/preface.ts" />
 /// <reference path="../scenes/game.ts" />
 /// <reference path="../scenes/gameover.ts" /> 
 //# sourceMappingURL=_reference.js.map

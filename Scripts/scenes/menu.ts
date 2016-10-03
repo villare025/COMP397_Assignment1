@@ -2,7 +2,7 @@
 	File Name:             Scene Menu - TS|JS File 
 	Author:                Elaine Mae Villarino
     Last Modified By:      Elaine Mae Villarino 
-	Last Modified Date:    Sunday, October 2nd, 2016
+	Last Modified Date:    Monday, October 3nd, 2016
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Menu scene.
@@ -15,7 +15,9 @@ module scenes {
         // Private instance variables
         // Label or bitmap
         // Button 
-        private _menuButton: objects.Button;
+        private _bg: createjs.Bitmap;
+        private _menuBtnStart: objects.Button;
+        private _menuBtnPreface: objects.Button;
         private _menuLabel: objects.Label;
         private _menuButtonOver: objects.Button;
 
@@ -25,21 +27,26 @@ module scenes {
         }
 
         public start(): void {
+            // Add objects to the scene
             console.log("Menu Scene Started");
 
-            this._menuLabel = new objects.Label("Welcome to New Scene", "Comic Sans 50px", "#00008B", config.Screen.CENTER_X, config.Screen.CENTER_Y);
-            this.addChild(this._menuLabel);
+             // Create BG for scene and add to Game Scene container
+            this._bg = new createjs.Bitmap(assets.getResult("BG_Title"));
+            this.addChild(this._bg);
 
+            // Add START Button to scene. Register for click callback function
+            this._menuBtnStart = new objects.Button("Start", config.Screen.CENTER_X + 135, config.Screen.CENTER_Y + 72);
+            this.addChild(this._menuBtnStart);
+            this._menuBtnStart.on("click", this._startButtonClick, this);
+            
+            // Add PREFACE Button to scene. Register for click callback function
+            this._menuBtnPreface = new objects.Button("Preface", config.Screen.CENTER_X + 135, config.Screen.CENTER_Y + 155);
+            this.addChild(this._menuBtnPreface);
+            this._menuBtnPreface.on("click", this._prefaceButtonClick, this);
 
-            // Add button to scene. Register for click callback function
-            this._menuButton = new objects.Button("Start", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
-            this.addChild(this._menuButton);
-            this._menuButton.on("click", this._startButtonClick, this);
-
-
-            this._menuButtonOver = new objects.Button("GameOver", config.Screen.CENTER_X, config.Screen.CENTER_Y - 180);
-            this.addChild(this._menuButtonOver);
-            this._menuButtonOver.on("click", this._overButtonClick, this);
+            // Add TITLE Label to scene and add to Game Scene container 
+            this._menuLabel = new objects.Label("TITLE", "50px Verdana", "#00008B", config.Screen.CENTER_X + 135, config.Screen.CENTER_Y - 50);
+            this.addChild(this._menuLabel); 
 
             // Add menu scene to global stage container
             stage.addChild(this);
@@ -54,6 +61,11 @@ module scenes {
         private _startButtonClick(event: createjs.MouseEvent) {
             // Change global scene variable to GAME. Call global changeScene() function
             scene = config.Scene.NODE1;
+            changeScene();
+        }
+        private _prefaceButtonClick(event: createjs.MouseEvent) {
+            // Change global scene variable to GAME. Call global changeScene() function
+            scene = config.Scene.PREFACE;
             changeScene();
         }
         private _overButtonClick(event: createjs.MouseEvent) {
