@@ -6,7 +6,7 @@
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Node 9 scene.
-    Revision History:      Set the Node 9 background image with text.
+    Revision History:      Set the Node 9 GameOver Button.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -33,9 +33,9 @@ var scenes;
             this.addChild(this._gameBtnBack);
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
             // Create GAME OVER Button for scene and add to Game Scene container. Register for onclick event
-            this._gameBtnOver = new objects.Button("Back", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._gameBtnOver = new objects.Button("GameOver", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._gameBtnOver);
-            this._gameBtnOver.on("click", this._onBackButtonClick, this);
+            this._gameBtnOver.on("click", this._onGameOverButtonClick, this);
             // Add gamescene to main stage container. 
             stage.addChild(this);
         };

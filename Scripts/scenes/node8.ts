@@ -6,7 +6,7 @@
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Node 8 scene.
-    Revision History:      Set the Node 8 background image with text.
+    Revision History:      Set the Node 8 GameOver Button.
 */
 
 module scenes {
@@ -40,7 +40,7 @@ module scenes {
             // Create GAME OVER Button for scene and add to Game Scene container. Register for onclick event
             this._gameBtnOver = new objects.Button("GameOver", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._gameBtnOver);
-            this._gameBtnOver.on("click", this._onBackButtonClick, this);
+            this._gameBtnOver.on("click", this._onGameOverButtonClick, this);
 
             // Add gamescene to main stage container. 
             stage.addChild(this);

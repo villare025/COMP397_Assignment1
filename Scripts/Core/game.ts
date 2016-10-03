@@ -44,7 +44,7 @@ var assetData:objects.Asset[] = [
     {id: "BG_Node13", src:"../../Assets/images/bgNode1.jpg"},
     {id: "BG_Node14", src:"../../Assets/images/bgNode1.jpg"},
     {id: "BG_Node15", src:"../../Assets/images/bgNode1.jpg"},
-    {id: "GameOver", src:"../../Assets/images/gameover.png"}
+    {id: "GameOver", src:"../../Assets/images/btnEnd.jpg"}
 ];
 
 function preload() {
