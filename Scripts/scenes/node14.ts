@@ -38,7 +38,7 @@ module scenes {
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
 
             // Create GAME OVER Button for scene and add to Game Scene container. Register for onclick event
-            this._gameBtnOver = new objects.Button("BadEnd", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._gameBtnOver = new objects.Button("BadEnd", config.Screen.OVER_X, config.Screen.OVER_Y);
             this.addChild(this._gameBtnOver);
             this._gameBtnOver.on("click", this._onGameOverButtonClick, this);
 

@@ -40,8 +40,8 @@ var assetData = [
     { id: "BG_Node13", src: "../../Assets/images/bgNode13.jpg" },
     { id: "BG_Node14", src: "../../Assets/images/bgNode14.jpg" },
     { id: "BG_Node15", src: "../../Assets/images/bgNode15.jpg" },
-    { id: "BadEnd", src: "../../Assets/images/btnBadEnd.jpg" },
-    { id: "GoodEnd", src: "../../Assets/images/btnGoodEnd.jpg" }
+    { id: "BadEnd", src: "../../Assets/images/btnBadEnd.png" },
+    { id: "GoodEnd", src: "../../Assets/images/btnGoodEnd.png" }
 ];
 function preload() {
     // Create a queue for assets being loaded

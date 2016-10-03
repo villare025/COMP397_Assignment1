@@ -35,6 +35,8 @@ module config {
         public static CHOICE1_Y : number = 430;
         public static CHOICE2_X : number = 475;
         public static CHOICE2_Y : number = 430;
+        public static OVER_X : number = 320;
+        public static OVER_Y : number = 435;
     }
     
     export class Game {

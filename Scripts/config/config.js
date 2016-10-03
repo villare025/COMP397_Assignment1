@@ -41,6 +41,8 @@ var config;
         Screen.CHOICE1_Y = 430;
         Screen.CHOICE2_X = 475;
         Screen.CHOICE2_Y = 430;
+        Screen.OVER_X = 320;
+        Screen.OVER_Y = 435;
         return Screen;
     }());
     config.Screen = Screen;
