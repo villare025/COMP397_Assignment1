@@ -10,6 +10,7 @@ module scenes {
         private _gameLabel : objects.Label;
         private _gameButton : objects.Button;
 
+        // CONSTRUCTOR
         constructor() {
             super();
         }
@@ -24,7 +25,7 @@ module scenes {
             this.addChild(this._gameLabel);
 
             // Create button for scene and add to Game Scene container. Register for onclick event
-            this._gameButton = new objects.Button("Back", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._gameButton = new objects.Button("Return", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._gameButton);
             this._gameButton.on("click", this._onBackButtonClick, this);
 

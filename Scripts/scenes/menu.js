@@ -1,6 +1,12 @@
 /*
-    Scene module to group all user-defined scenes  under the same "namespace aka module"
-    Menu scene that contains all assets and functionality associated with the menu itself
+    File Name:             Scene Menu - TS|JS File
+    Author:                Elaine Mae Villarino
+    Last Modified By:      Elaine Mae Villarino
+    Last Modified Date:    Sunday, October 2nd, 2016
+    Website Name:          EV - COMP397 - Assignment 1
+    Program Description:   JS file that contains the components that
+                           are required to render the game's Menu scene.
+    Revision History:      Set the Initial Menu components aka comments, buttons, and scene switches.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -29,16 +35,18 @@ var scenes;
             // Add menu scene to global stage container
             stage.addChild(this);
         };
+        // Run on every tick
         Menu.prototype.update = function () {
+            // Update objects
         };
         // Function for when button is pressed
         Menu.prototype._startButtonClick = function (event) {
             // Change global scene variable to GAME. Call global changeScene() function
-            scene = config.Scene.GAME;
+            scene = config.Scene.NODE1;
             changeScene();
         };
         Menu.prototype._overButtonClick = function (event) {
-            scene = config.Scene.OVER;
+            scene = config.Scene.NODE15;
             changeScene();
         };
         return Menu;

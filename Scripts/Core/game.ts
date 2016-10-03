@@ -1,4 +1,14 @@
 /// <reference path = "_reference.ts" />
+/*
+	File Name:             Core Game - TS|JS File 
+	Author:                Elaine Mae Villarino
+    Last Modified By:      Elaine Mae Villarino 
+	Last Modified Date:    Sunday, October 2nd, 2016
+	Website Name:          EV - COMP397 - Assignment 1
+	Program Description:   JS file that contains the components that 
+                           are required to render the game's core.
+    Revision History:      Add the nodes to changeScene function.
+*/
 
 // Global Variables
 var assets: createjs.LoadQueue;
@@ -16,6 +26,7 @@ var gameScene : scenes.Game;
 var assetData:objects.Asset[] = [
     {id: "Start", src:"../../Assets/images/Start.png"}, 
     {id: "Back", src:"../../Assets/images/Back.png"},
+    {id: "Return", src:"../../Assets/images/return.png"},
     {id: "BG", src:"../../Assets/images/bg.jpg"},
     {id: "GameOver", src:"../../Assets/images/gameover.png"}
 ];
@@ -67,15 +78,90 @@ function changeScene() : void {
             currentScene = menuScene;
             console.log("Starting MENU scene");
             break;
-        case config.Scene.GAME :
+        case config.Scene.NODE1 :
             stage.removeAllChildren();
-            currentScene = new scenes.Game();
-            console.log("Starting GAME scene");
+            currentScene = new scenes.Node1();
+            console.log("Starting NODE1 scene");
+            break;
+        case config.Scene.NODE2 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node2();
+            console.log("Starting NODE2 scene");
+            break;
+        case config.Scene.NODE3 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node3();
+            console.log("Starting NODE3 scene");
+            break;
+        case config.Scene.NODE4 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node4();
+            console.log("Starting NODE4 scene");
+            break;
+        case config.Scene.NODE5 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node5();
+            console.log("Starting NODE5 scene");
+            break;
+        case config.Scene.NODE6 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node6();
+            console.log("Starting NODE6 scene");
+            break;
+        case config.Scene.NODE7 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node7();
+            console.log("Starting NODE7 scene");
+            break;
+        case config.Scene.NODE8 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node8();
+            console.log("Starting NODE8 scene");
+            break;
+        case config.Scene.NODE9 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node9();
+            console.log("Starting NODE9 scene");
+            break;
+        case config.Scene.NODE10 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node10();
+            console.log("Starting NODE10 scene");
+            break;
+        case config.Scene.NODE11 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node11();
+            console.log("Starting NODE11 scene");
+            break;
+        case config.Scene.NODE12 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node12();
+            console.log("Starting NODE12 scene");
+            break;
+        case config.Scene.NODE13 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node13();
+            console.log("Starting NODE13 scene");
+            break;
+        case config.Scene.NODE14 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node14();
+            console.log("Starting NODE14 scene");
+            break;
+        case config.Scene.NODE15 :
+            stage.removeAllChildren();
+            currentScene = new scenes.Node15();
+            console.log("Starting NODE15 scene");
             break;
         case config.Scene.OVER :
             stage.removeAllChildren();
             currentScene = new scenes.Gameover();
             console.log("Starting GAME OVER scene");
+            break;
+        case config.Scene.GAME :
+            stage.removeAllChildren();
+            currentScene = new scenes.Game();
+            console.log("Starting GAME scene");
             break;
     }
     

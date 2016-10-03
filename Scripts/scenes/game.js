@@ -11,6 +11,7 @@ var scenes;
 (function (scenes) {
     var Game = (function (_super) {
         __extends(Game, _super);
+        // CONSTRUCTOR
         function Game() {
             _super.call(this);
         }
@@ -22,7 +23,7 @@ var scenes;
             this._gameLabel = new objects.Label("PLAY SCENE", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
             this.addChild(this._gameLabel);
             // Create button for scene and add to Game Scene container. Register for onclick event
-            this._gameButton = new objects.Button("Back", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._gameButton = new objects.Button("Return", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._gameButton);
             this._gameButton.on("click", this._onBackButtonClick, this);
             // Add gamescene to main stage container. 

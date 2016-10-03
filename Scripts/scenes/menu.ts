@@ -1,6 +1,12 @@
 /*
-    Scene module to group all user-defined scenes  under the same "namespace aka module"
-    Menu scene that contains all assets and functionality associated with the menu itself
+	File Name:             Scene Menu - TS|JS File 
+	Author:                Elaine Mae Villarino
+    Last Modified By:      Elaine Mae Villarino 
+	Last Modified Date:    Sunday, October 2nd, 2016
+	Website Name:          EV - COMP397 - Assignment 1
+	Program Description:   JS file that contains the components that 
+                           are required to render the game's Menu scene.
+    Revision History:      Set the Initial Menu components aka comments, buttons, and scene switches.
 */
 
 module scenes {
@@ -9,17 +15,16 @@ module scenes {
         // Private instance variables
         // Label or bitmap
         // Button 
-        private _menuButton : objects.Button;
-        private _menuLabel : objects.Label;
-        private _menuButtonOver : objects.Button;
+        private _menuButton: objects.Button;
+        private _menuLabel: objects.Label;
+        private _menuButtonOver: objects.Button;
 
         // Menu Class Contructor
-        constructor()
-        {
+        constructor() {
             super();
         }
 
-        public start() : void {
+        public start(): void {
             console.log("Menu Scene Started");
 
             this._menuLabel = new objects.Label("Welcome to New Scene", "Comic Sans 50px", "#00008B", config.Screen.CENTER_X, config.Screen.CENTER_Y);
@@ -40,18 +45,19 @@ module scenes {
             stage.addChild(this);
         }
 
-        public update() : void {
-
+        // Run on every tick
+        public update(): void {
+            // Update objects
         }
 
         // Function for when button is pressed
-        private _startButtonClick(event : createjs.MouseEvent) {
+        private _startButtonClick(event: createjs.MouseEvent) {
             // Change global scene variable to GAME. Call global changeScene() function
-            scene = config.Scene.GAME;
+            scene = config.Scene.NODE1;
             changeScene();
         }
-        private _overButtonClick(event : createjs.MouseEvent) {
-            scene = config.Scene.OVER;
+        private _overButtonClick(event: createjs.MouseEvent) {
+            scene = config.Scene.NODE15;
             changeScene();
         }
     }
