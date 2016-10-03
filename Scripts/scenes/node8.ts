@@ -6,13 +6,14 @@
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Node 8 scene.
-    Revision History:      Set the Initial Node 8 components aka comments, buttons, and scene switches.
+    Revision History:      Set the Node 8 background image with text.
 */
 
 module scenes {
     export class Node8 extends objects.Scene {
 
         // PRIVATE VARIABLES
+        private _bg: createjs.Bitmap;
         private _gameBtnBack: objects.Button;
         private _gameLabel: objects.Label;
         private _gameBtnOver: objects.Button;
@@ -27,9 +28,9 @@ module scenes {
             // Add objects to the scene
             console.log("Node 8 scene started");
 
-            // Create Label for scene and add to Game Scene container
-            this._gameLabel = new objects.Label("PLAY NODE 8", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
-            this.addChild(this._gameLabel);
+            // Create BG for scene and add to Game Scene container
+            this._bg = new createjs.Bitmap(assets.getResult("BG_Node8"));
+            this.addChild(this._bg);
 
             // Create BACK Button for scene and add to Game Scene container. Register for onclick event
             this._gameBtnBack = new objects.Button("Return", config.Screen.TOPLEFT_X, config.Screen.TOPLEFT_Y);
@@ -37,7 +38,7 @@ module scenes {
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
 
             // Create GAME OVER Button for scene and add to Game Scene container. Register for onclick event
-            this._gameBtnOver = new objects.Button("Back", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._gameBtnOver = new objects.Button("GameOver", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._gameBtnOver);
             this._gameBtnOver.on("click", this._onBackButtonClick, this);
 

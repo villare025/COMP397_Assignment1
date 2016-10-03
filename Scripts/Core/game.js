@@ -25,6 +25,21 @@ var assetData = [
     { id: "Return", src: "../../Assets/images/return.png" },
     { id: "BG", src: "../../Assets/images/bg.jpg" },
     { id: "BG_Title", src: "../../Assets/images/bgTitle.jpg" },
+    { id: "BG_Node1", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node2", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node3", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node4", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node5", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node6", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node7", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node8", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node9", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node10", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node11", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node12", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node13", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node14", src: "../../Assets/images/bgNode1.jpg" },
+    { id: "BG_Node15", src: "../../Assets/images/bgNode1.jpg" },
     { id: "GameOver", src: "../../Assets/images/gameover.png" }
 ];
 function preload() {

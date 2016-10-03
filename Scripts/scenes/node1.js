@@ -6,7 +6,7 @@
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Node 1 scene.
-    Revision History:      Set the Initial Node 1 components aka comments, buttons, and scene switches.
+    Revision History:      Set the Node 1 background image with text.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -25,9 +25,9 @@ var scenes;
         Node1.prototype.start = function () {
             // Add objects to the scene
             console.log("Node 1 scene started");
-            // Create Label for scene and add to Game Scene container
-            this._gameLabel = new objects.Label("PLAY NODE 1", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
-            this.addChild(this._gameLabel);
+            // Create BG for scene and add to Game Scene container
+            this._bg = new createjs.Bitmap(assets.getResult("BG_Node1"));
+            this.addChild(this._bg);
             // Create Back Button for scene and add to Game Scene container. Register for onclick event
             this._gameBtnBack = new objects.Button("Return", config.Screen.TOPLEFT_X, config.Screen.TOPLEFT_Y);
             this.addChild(this._gameBtnBack);

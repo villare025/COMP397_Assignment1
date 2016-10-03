@@ -6,13 +6,14 @@
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Node 10 scene.
-    Revision History:      Set the Initial Node 10 components aka comments, buttons, and scene switches.
+    Revision History:      Set the Node 10 background image with text.
 */
 
 module scenes {
     export class Node10 extends objects.Scene {
 
         // PRIVATE VARIABLES
+        private _bg: createjs.Bitmap;
         private _gameBtnBack: objects.Button;
         private _gameLabel: objects.Label;
         private _gameBtnOver: objects.Button;
@@ -27,9 +28,9 @@ module scenes {
             // Add objects to the scene
             console.log("Node 10 scene started");
 
-            // Create Label for scene and add to Game Scene container
-            this._gameLabel = new objects.Label("PLAY NODE 10", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
-            this.addChild(this._gameLabel);
+            // Create BG for scene and add to Game Scene container
+            this._bg = new createjs.Bitmap(assets.getResult("BG_Node10"));
+            this.addChild(this._bg);
 
             // Create BACK Button for scene and add to Game Scene container. Register for onclick event
             this._gameBtnBack = new objects.Button("Return", config.Screen.TOPLEFT_X, config.Screen.TOPLEFT_Y);
