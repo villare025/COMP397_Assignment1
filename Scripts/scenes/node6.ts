@@ -39,12 +39,12 @@ module scenes {
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
 
             // Create CHOICE 1 Button for scene and add to Game Scene container. Register for onclick event
-            this._gameBtnChoice1 = new objects.Button("Start", config.Screen.CHOICE1_X, config.Screen.CHOICE1_Y);
+            this._gameBtnChoice1 = new objects.Button("CHOICE_Teleport", config.Screen.CHOICE1_X, config.Screen.CHOICE1_Y);
             this.addChild(this._gameBtnChoice1);
             this._gameBtnChoice1.on("click", this._choice1ButtonClick, this);
             
             // Create CHOICE 2 Button for scene and add to Game Scene container. Register for onclick event
-            this._gameBtnChoice2 = new objects.Button("Preface", config.Screen.CHOICE2_X, config.Screen.CHOICE2_Y);
+            this._gameBtnChoice2 = new objects.Button("CHOICE_Disturbance", config.Screen.CHOICE2_X, config.Screen.CHOICE2_Y);
             this.addChild(this._gameBtnChoice2);
             this._gameBtnChoice2.on("click", this._choice2ButtonClick, this);
             

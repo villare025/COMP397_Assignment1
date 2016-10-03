@@ -7,7 +7,7 @@
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's core.
-    Revision History:      Add the nodes to changeScene function.
+    Revision History:      Add the Choice Button Assets to assetData.
 */
 
 // Global Variables
@@ -44,6 +44,20 @@ var assetData:objects.Asset[] = [
     {id: "BG_Node13", src:"../../Assets/images/bgNode13.jpg"},
     {id: "BG_Node14", src:"../../Assets/images/bgNode14.jpg"},
     {id: "BG_Node15", src:"../../Assets/images/bgNode15.jpg"},
+    {id: "CHOICE_Insult", src:"../../Assets/images/btnInsult.png"},
+    {id: "CHOICE_SoundsRight", src:"../../Assets/images/btnSoundsRight.png"},
+    {id: "CHOICE_WaitMinute", src:"../../Assets/images/btnWaitMinute.png"},
+    {id: "CHOICE_First", src:"../../Assets/images/btnFirst.png"},
+    {id: "CHOICE_Second", src:"../../Assets/images/btnSecond.png"},
+    {id: "CHOICE_AcceptCharges", src:"../../Assets/images/btnAcceptCharges.png"},
+    {id: "CHOICE_TakeLeave", src:"../../Assets/images/btnTakeLeave.png"},
+    {id: "CHOICE_Flatter", src:"../../Assets/images/btnFlatter.png"},
+    {id: "CHOICE_FindThem", src:"../../Assets/images/btnFindThem.png"},
+    {id: "CHOICE_FindHer", src:"../../Assets/images/btnFindHer.png"},
+    {id: "CHOICE_Teleport", src:"../../Assets/images/btnTeleport.png"},
+    {id: "CHOICE_Disturbance", src:"../../Assets/images/btnDisturbance.png"},
+    {id: "CHOICE_Bewitched", src:"../../Assets/images/btnBewitched.png"},
+    {id: "CHOICE_Enchanted", src:"../../Assets/images/btnEnchanted.png"},
     {id: "BadEnd", src:"../../Assets/images/btnBadEnd.png"},
     {id: "GoodEnd", src:"../../Assets/images/btnGoodEnd.png"}
 ];
