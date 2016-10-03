@@ -33,7 +33,7 @@ var scenes;
             this.addChild(this._gameBtnBack);
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
             // Create GAME OVER Button for scene and add to Game Scene container. Register for onclick event
-            this._gameBtnOver = new objects.Button("GameOver", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._gameBtnOver = new objects.Button("BadEnd", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._gameBtnOver);
             this._gameBtnOver.on("click", this._onGameOverButtonClick, this);
             // Add gamescene to main stage container. 
