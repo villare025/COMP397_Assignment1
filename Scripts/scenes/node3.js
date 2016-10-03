@@ -6,7 +6,7 @@
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Node 3 scene.
-    Revision History:      Set the Node 3 background image with text.
+    Revision History:      Set the Node 3 Choice Buttons.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -32,6 +32,14 @@ var scenes;
             this._gameBtnBack = new objects.Button("Return", config.Screen.TOPLEFT_X, config.Screen.TOPLEFT_Y);
             this.addChild(this._gameBtnBack);
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
+            // Create CHOICE 1 Button for scene and add to Game Scene container. Register for onclick event
+            this._gameBtnChoice1 = new objects.Button("Start", config.Screen.CHOICE1_X, config.Screen.CHOICE1_Y);
+            this.addChild(this._gameBtnChoice1);
+            this._gameBtnChoice1.on("click", this._choice1ButtonClick, this);
+            // Create CHOICE 2 Button for scene and add to Game Scene container. Register for onclick event
+            this._gameBtnChoice2 = new objects.Button("Preface", config.Screen.CHOICE2_X, config.Screen.CHOICE2_Y);
+            this.addChild(this._gameBtnChoice2);
+            this._gameBtnChoice2.on("click", this._choice2ButtonClick, this);
             // Add gamescene to main stage container. 
             stage.addChild(this);
         };

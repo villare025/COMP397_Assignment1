@@ -29,8 +29,12 @@ module config {
         public static HEIGHT : number = 480;
         public static CENTER_X : number = 320;
         public static CENTER_Y : number = 240;
-        public static TOPLEFT_X : number = 90;
-        public static TOPLEFT_Y : number = 40;
+        public static TOPLEFT_X : number = 95;
+        public static TOPLEFT_Y : number = 35;
+        public static CHOICE1_X : number = 110;
+        public static CHOICE1_Y : number = 430;
+        public static CHOICE2_X : number = 475;
+        public static CHOICE2_Y : number = 430;
     }
     
     export class Game {
