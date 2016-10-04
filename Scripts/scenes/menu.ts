@@ -2,24 +2,21 @@
 	File Name:             Scene Menu - TS|JS File 
 	Author:                Elaine Mae Villarino
     Last Modified By:      Elaine Mae Villarino 
-	Last Modified Date:    Monday, October 3nd, 2016
+	Last Modified Date:    Tuesday, October 4th, 2016
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Menu scene.
-    Revision History:      Set the Menu BG Sound to play every neutral node.
+    Revision History:      Clean-up code.
 */
 
 module scenes {
     export class Menu extends objects.Scene {
 
-        // Private instance variables
-        // Label or bitmap
-        // Button 
+        // PRIVATE VARIABLES
         private _bg: createjs.Bitmap;
         private _menuBtnStart: objects.Button;
         private _menuBtnPreface: objects.Button;
         private _menuLabel: objects.Label;
-        private _menuButtonOver: objects.Button;
 
         // Menu Class Contructor
         constructor() {

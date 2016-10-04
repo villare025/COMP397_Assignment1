@@ -2,11 +2,11 @@
 	File Name:             Scene Node 15 - TS|JS File 
 	Author:                Elaine Mae Villarino 
     Last Modified By:      Elaine Mae Villarino 
-	Last Modified Date:    Monday, October 3nd, 2016
+	Last Modified Date:    Tuesday, October 4th, 2016
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Node 15 scene.
-    Revision History:      Set the Node 15 Good End Music.
+    Revision History:      Clean-up code.
 */
 
 module scenes {
@@ -15,7 +15,6 @@ module scenes {
         // PRIVATE VARIABLES
         private _bg: createjs.Bitmap;
         private _gameBtnBack: objects.Button;
-        private _gameLabel: objects.Label;
         private _gameBtnOver: objects.Button;
 
         // CONSTRUCTOR

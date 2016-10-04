@@ -2,11 +2,11 @@
     File Name:             Scene Menu - TS|JS File
     Author:                Elaine Mae Villarino
     Last Modified By:      Elaine Mae Villarino
-    Last Modified Date:    Monday, October 3nd, 2016
+    Last Modified Date:    Tuesday, October 4th, 2016
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Menu scene.
-    Revision History:      Set the Menu BG Sound to play every neutral node.
+    Revision History:      Clean-up code.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
