@@ -40,7 +40,9 @@ var scenes;
             this.addChild(this._menuBtnPreface);
             this._menuBtnPreface.on("click", this._prefaceButtonClick, this);
             // Add TITLE Label to scene and add to Game Scene container 
-            this._menuLabel = new objects.Label("TITLE", "50px Verdana", "#00008B", config.Screen.CENTER_X + 135, config.Screen.CENTER_Y - 50);
+            3;
+            this._menuLabel = new objects.Label("The\nTruth's\nWay", "bold 70px Kaushan Script", "#00008B", config.Screen.CENTER_X + 260, config.Screen.CENTER_Y - 110);
+            this._menuLabel.textAlign = "center";
             this.addChild(this._menuLabel);
             // Add menu scene to global stage container
             stage.addChild(this);
