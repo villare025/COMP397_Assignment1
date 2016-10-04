@@ -3,11 +3,11 @@
 	File Name:             Core Game - TS|JS File 
 	Author:                Elaine Mae Villarino
     Last Modified By:      Elaine Mae Villarino 
-	Last Modified Date:    Sunday, October 2nd, 2016
+	Last Modified Date:    Tuesday, October 4th, 2016
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's core.
-    Revision History:      Add the Choice Button Assets to assetData.
+    Revision History:      Remove unused assets in assetData.
 */
 
 // Global Variables
@@ -31,7 +31,6 @@ var assetData:objects.Asset[] = [
     {id: "Preface", src:"../../Assets/images/btnTitlePreface.png"}, 
     {id: "Return", src:"../../Assets/images/return.png"},
     {id: "Switch", src:"../../Assets/images/btnSwitch.png"},
-    {id: "BG", src:"../../Assets/images/bg.jpg"},
     {id: "BG_Title", src:"../../Assets/images/bgTitle.jpg"},
     {id: "BG_Node1", src:"../../Assets/images/bgNode1.jpg"},
     {id: "BG_Node2", src:"../../Assets/images/bgNode2.jpg"},
