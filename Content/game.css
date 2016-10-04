@@ -1,7 +1,8 @@
 /*
 	File Name:             Game - CSS File 
 	Author:                Elaine Mae Villarino 
-	Last Modified Date:    Sunday, October 2nd, 2016
+	Last Modified By:      Elaine Mae Villarino
+	Last Modified Date:    Tuesday, October 4th, 2016
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   CSS file that contains the styles that render the whole 
 						   COMP397 - Assignment 1 site which is a Choose Your Own Adventure Game.
@@ -15,7 +16,7 @@ body {
 }
 
 .game {
-    width : 80%;
+    width : 50%;
     margin: 0 auto;
 }
 
