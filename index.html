@@ -14,17 +14,63 @@
         <link rel="stylesheet" href="Content/reset.css">
         <link rel="stylesheet" href="Content/game.css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css">
     </head>
     
     <body onload="preload()">
-        <!-- Declare Game Canvas -->
-        <div class="game">
-            <canvas id="canvas" width="640" height="480"></canvas>
+        <nav class="navbar navbar-dark bg-inverse">
+			<div class="container">
+				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+					&#9776;
+				</button>
+				<div class="collapse navbar-toggleable-xs" id="navbar-header">
+					<a class="navbar-brand" href="http://ev-comp397-a1.azurewebsites.net">Elaine Mae Villarino - A1 </a>
+					<!-- Single button -->
+					<div class="btn-group">
+						<button id="dropdownMenu1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							COMP397 Links
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<a class="dropdown-item" href="http://ev-comp397-a1.azurewebsites.net">Assignment 1</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item">Assignment 2</a>
+							<a class="dropdown-item">Assignment 3</a>
+							<a class="dropdown-item">Final Project</a>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /container -->
+		</nav> <!-- /navbar -->
+		
+		<section id="modalIn" class="yellow col-md-12" style="height:0.35em; background-color:#FFA200; margin-bottom:2em;">
+        
+        <div class="container">			
+			<!-- Floor Item Heading -->
+			<div class="row">
+				<div class="col-lg-12">
+					<p id="introduction"></p>
+					<h1 class="page-header">Assignment 1 - Choose Your Own Adventure
+					</h1>
+					<hr>
+				</div>
+			</div>	<!-- /.row -->
+
+            <!-- Game Row -->
+			<div class="row">
+				<div class="col-md-8">
+                    <div class="game">
+                        <!-- Declare Game Canvas -->
+                        <canvas id="canvas" width="640" height="480"></canvas>
+                    </div>
+                </div>
+            </div>	<!-- /.row -->
         </div>
         <!-- END Declare Game Canvas -->
 
         <!-- JavaScript Libraries -->
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="Scripts/lib/bootstrap.min.js"></script>
         <script src="Scripts/config/config.js"></script>
         <!-- CreateJS Libraries -->
         <script src="Scripts/lib/easeljs-0.8.2.min.js"></script>
