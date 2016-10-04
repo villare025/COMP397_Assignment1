@@ -31,6 +31,8 @@ module config {
         public static CENTER_Y : number = 240;
         public static TOPLEFT_X : number = 95;
         public static TOPLEFT_Y : number = 35;
+        public static TOPRIGHT_X : number = 652;
+        public static TOPRIGHT_Y : number = 35;
         public static CHOICE1_X : number = 110;
         public static CHOICE1_Y : number = 430;
         public static CHOICE2_X : number = 475;

@@ -37,6 +37,8 @@ var config;
         Screen.CENTER_Y = 240;
         Screen.TOPLEFT_X = 95;
         Screen.TOPLEFT_Y = 35;
+        Screen.TOPRIGHT_X = 652;
+        Screen.TOPRIGHT_Y = 35;
         Screen.CHOICE1_X = 110;
         Screen.CHOICE1_Y = 430;
         Screen.CHOICE2_X = 475;

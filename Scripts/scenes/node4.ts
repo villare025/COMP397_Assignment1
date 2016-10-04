@@ -6,7 +6,7 @@
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Node 4 scene.
-    Revision History:      Set the Node 4 Choice Buttons.
+    Revision History:      Set the Node 4 Switch Button.
 */
 
 module scenes {
@@ -15,6 +15,7 @@ module scenes {
         // PRIVATE VARIABLES
         private _bg: createjs.Bitmap;
         private _gameBtnBack: objects.Button;
+        private _gameBtnSwitch: objects.Button;
         private _gameLabel: objects.Label;
         private _gameBtnChoice1: objects.Button;
         private _gameBtnChoice2: objects.Button;
@@ -37,6 +38,11 @@ module scenes {
             this._gameBtnBack = new objects.Button("Return", config.Screen.TOPLEFT_X, config.Screen.TOPLEFT_Y);
             this.addChild(this._gameBtnBack);
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
+            
+            // Create Switch Button for scene and add to Game Scene container. Register for onclick event
+            this._gameBtnSwitch = new objects.Button("Switch", config.Screen.TOPRIGHT_X, config.Screen.TOPRIGHT_Y);
+            this.addChild(this._gameBtnSwitch);
+            this._gameBtnSwitch.on("click", this._onSwitchButtonClick, this);
 
             // Create CHOICE 1 Button for scene and add to Game Scene container. Register for onclick event
             this._gameBtnChoice1 = new objects.Button("CHOICE_First", config.Screen.CHOICE1_X, config.Screen.CHOICE1_Y);
@@ -71,6 +77,11 @@ module scenes {
         private _onBackButtonClick(event: createjs.MouseEvent) {
             // Set global variable to NODE2 Scene and call changescene function
             scene = config.Scene.NODE2;
+            changeScene();
+        }
+        private _onSwitchButtonClick(event: createjs.MouseEvent) {
+            // Set global variable to NODE5 Scene and call changescene function
+            scene = config.Scene.NODE5;
             changeScene();
         }
     }

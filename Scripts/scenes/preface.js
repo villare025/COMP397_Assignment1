@@ -37,10 +37,10 @@ var scenes;
             this.addChild(this._prefaceBtnBack);
             this._prefaceBtnBack.on("click", this._onBackButtonClick, this);
             // Create Label for scene and add to Game Scene container
-            this._prefaceTitle = new objects.Label("Preface", "50px Verdana", "#000000", config.Screen.CENTER_X + 75, config.Screen.CENTER_Y - 150);
+            this._prefaceTitle = new objects.Label("Preface", "60px Kaushan Script", "#000000", config.Screen.CENTER_X + 55, config.Screen.CENTER_Y - 150);
             this.addChild(this._prefaceTitle);
             // Create Label for scene and add to Game Scene container
-            this._prefaceParagraph = new objects.Label("Instructions: \nSimply click on a golden choice button \n     to progress through the story. \nThere are a total of 8 endings \n - 7 Bad Endings and 1 True Good End. \nA Return Button is available \n     on the Top Left to go back a scene. ", "bold 14px Verdana", "#000000", config.Screen.CENTER_X + 140, config.Screen.CENTER_Y);
+            this._prefaceParagraph = new objects.Label("Instructions: \nSimply click on a golden choice button \n     to progress through the story. \nThere are a total of 8 endings \n - 7 Bad Endings and 1 True Good End. \nA Return Button is available \n     on the Top Left to go back a scene. \nA Switch Button is available \n     on the Top Right to go the other scene.", "bold 14px Verdana", "#000000", config.Screen.CENTER_X + 140, config.Screen.CENTER_Y);
             this.addChild(this._prefaceParagraph);
             // Add gamescene to main stage container. 
             stage.addChild(this);

@@ -6,7 +6,7 @@
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Node 4 scene.
-    Revision History:      Set the Node 4 Choice Buttons.
+    Revision History:      Set the Node 4 Switch Button.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -32,6 +32,10 @@ var scenes;
             this._gameBtnBack = new objects.Button("Return", config.Screen.TOPLEFT_X, config.Screen.TOPLEFT_Y);
             this.addChild(this._gameBtnBack);
             this._gameBtnBack.on("click", this._onBackButtonClick, this);
+            // Create Switch Button for scene and add to Game Scene container. Register for onclick event
+            this._gameBtnSwitch = new objects.Button("Switch", config.Screen.TOPRIGHT_X, config.Screen.TOPRIGHT_Y);
+            this.addChild(this._gameBtnSwitch);
+            this._gameBtnSwitch.on("click", this._onSwitchButtonClick, this);
             // Create CHOICE 1 Button for scene and add to Game Scene container. Register for onclick event
             this._gameBtnChoice1 = new objects.Button("CHOICE_First", config.Screen.CHOICE1_X, config.Screen.CHOICE1_Y);
             this.addChild(this._gameBtnChoice1);
@@ -61,6 +65,11 @@ var scenes;
         Node4.prototype._onBackButtonClick = function (event) {
             // Set global variable to NODE2 Scene and call changescene function
             scene = config.Scene.NODE2;
+            changeScene();
+        };
+        Node4.prototype._onSwitchButtonClick = function (event) {
+            // Set global variable to NODE5 Scene and call changescene function
+            scene = config.Scene.NODE5;
             changeScene();
         };
         return Node4;
