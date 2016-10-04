@@ -6,7 +6,7 @@
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Node 12 scene.
-    Revision History:      Set the Node 12 GameOver Button.
+    Revision History:      Set the Node 12 Bad End Music.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -25,6 +25,10 @@ var scenes;
         Node12.prototype.start = function () {
             // Add objects to the scene
             console.log("Node 12 scene started");
+            // Start Bad Music
+            createjs.Sound.stop();
+            var bgBad = createjs.Sound.play("MUSIC_Bad");
+            bgBad.play({ interrupt: createjs.Sound.INTERRUPT_ANY, loop: -1, volume: 1 });
             // Create BG for scene and add to Game Scene container
             this._bg = new createjs.Bitmap(assets.getResult("BG_Node12"));
             this.addChild(this._bg);

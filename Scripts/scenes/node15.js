@@ -6,7 +6,7 @@
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Node 15 scene.
-    Revision History:      Set the Node 15 GameOver Button.
+    Revision History:      Set the Node 15 Good End Music.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -25,6 +25,10 @@ var scenes;
         Node15.prototype.start = function () {
             // Add objects to the scene
             console.log("Node 15 scene started");
+            // Start Good Music
+            createjs.Sound.stop();
+            var bgGood = createjs.Sound.play("MUSIC_Good");
+            bgGood.play({ interrupt: createjs.Sound.INTERRUPT_ANY, loop: -1, volume: 1 });
             // Create BG for scene and add to Game Scene container
             this._bg = new createjs.Bitmap(assets.getResult("BG_Node15"));
             this.addChild(this._bg);

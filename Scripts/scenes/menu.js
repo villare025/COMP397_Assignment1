@@ -6,7 +6,7 @@
     Website Name:          EV - COMP397 - Assignment 1
     Program Description:   JS file that contains the components that
                            are required to render the game's Menu scene.
-    Revision History:      Set the Initial Menu components aka comments, buttons, and scene switches.
+    Revision History:      Set the Menu BG Sound to play every neutral node.
 */
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -24,6 +24,10 @@ var scenes;
         Menu.prototype.start = function () {
             // Add objects to the scene
             console.log("Menu Scene Started");
+            // Start Music
+            createjs.Sound.stop();
+            var bgAll = createjs.Sound.play("MUSIC_All");
+            bgAll.play({ interrupt: createjs.Sound.INTERRUPT_ANY, loop: -1, volume: 1 });
             // Create BG for scene and add to Game Scene container
             this._bg = new createjs.Bitmap(assets.getResult("BG_Title"));
             this.addChild(this._bg);

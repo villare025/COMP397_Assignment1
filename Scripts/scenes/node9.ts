@@ -6,7 +6,7 @@
 	Website Name:          EV - COMP397 - Assignment 1
 	Program Description:   JS file that contains the components that 
                            are required to render the game's Node 9 scene.
-    Revision History:      Set the Node 9 GameOver Button.
+    Revision History:      Set the Node 9 Bad End Music.
 */
 
 module scenes {
@@ -27,6 +27,11 @@ module scenes {
         public start(): void {
             // Add objects to the scene
             console.log("Node 9 scene started");
+
+            // Start Bad Music
+            createjs.Sound.stop();
+            var bgBad = createjs.Sound.play("MUSIC_Bad");
+            bgBad.play({ interrupt: createjs.Sound.INTERRUPT_ANY, loop: -1, volume: 1 });
 
             // Create BG for scene and add to Game Scene container
             this._bg = new createjs.Bitmap(assets.getResult("BG_Node9"));

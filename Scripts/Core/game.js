@@ -20,6 +20,9 @@ var menuScene;
 var gameScene;
 // Preload Assets required
 var assetData = [
+    { id: "MUSIC_All", src: "../../Assets/audio/Persona3-Mistic.mp3" },
+    { id: "MUSIC_Bad", src: "../../Assets/audio/Persona3-Troubled.mp3" },
+    { id: "MUSIC_Good", src: "../../Assets/audio/Persona3-MoreThanOneHeart.mp3" },
     { id: "Start", src: "../../Assets/images/btnTitleStart.png" },
     { id: "Preface", src: "../../Assets/images/btnTitlePreface.png" },
     { id: "Return", src: "../../Assets/images/return.png" },
@@ -60,7 +63,7 @@ var assetData = [
 function preload() {
     // Create a queue for assets being loaded
     assets = new createjs.LoadQueue(false);
-    // assets.installPlugin(createjs.Sound);
+    assets.installPlugin(createjs.Sound);
     // Register callback function to be run when assets complete loading.
     assets.on("complete", init, this);
     assets.loadManifest(assetData);
